@@ -18,7 +18,7 @@ btnRandom.onclick = async () => {
   console.log(resp.data.result);
 
   Gender.innerText = resp.result[0].gender;
-  imgProflie.src = "profile-placeholder.jpeg";
+  imgProflie.src = resp.result[0].picture;
   Name.innerText = resp.result[0].name;
   Email.innerText = resp.result[0].email;
   Address.innerText = resp.result[0].location;
